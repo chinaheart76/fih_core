@@ -1,6 +1,7 @@
 package com.fih.framework.core.envelope.impl;
 
 import java.util.Collection;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
@@ -51,6 +52,12 @@ public class EnvelopeStore implements Map<String, Object> {
 
 	@Override
 	public void putAll(Map<? extends String, ? extends Object> arg0) {
+		throw new UnsupportedOperationException();
+//		store.putAll(arg0);
+	}
+	
+	public void putAll(EnvelopeStore arg0) {
+//		throw new UnsupportedOperationException();
 		store.putAll(arg0);
 	}
 
@@ -66,7 +73,7 @@ public class EnvelopeStore implements Map<String, Object> {
 
 	@Override
 	public Collection<Object> values() {
-		return store.values();
+		return Collections.unmodifiableCollection(store.values());
 	}
 
 }
