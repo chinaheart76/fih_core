@@ -1,5 +1,15 @@
 package com.fih.framework.core.envelope;
 
+/**
+ * @author 邵福安
+ * @version v0.1
+ *
+ * 创建时间：2016年3月25日 下午12:19:40  <br>
+ * 最后修改时间：<br>
+ * 		TODO		
+ * <br><br> 
+ * 信封处理接口
+ */
 public interface IEnvelopeHandler {
 	
 	IEnvelope handler(IEnvelope envelope);
