@@ -6,6 +6,16 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
+/**
+ * @author 邵福安
+ * @version v0.1
+ *
+ * 创建时间：2016年3月25日 下午12:36:37  <br>
+ * 最后修改时间：<br>
+ * 		TODO		
+ * <br><br> 
+ * 信封存储实现
+ */
 public class EnvelopeStore implements Map<String, Object> {
 	
 	private Map<String,Object> store = new HashMap<String,Object>();
