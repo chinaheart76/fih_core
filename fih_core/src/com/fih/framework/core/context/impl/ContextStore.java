@@ -6,15 +6,16 @@ import java.util.Map;
 import com.fih.framework.core.context.IContext;
 
 /**
- * @author иш╦ё╟╡
+ * @author И┌╣Г╕▐Е╝┴
  * @version v0.1 2016-03-25<br>
  *<br>
- * ╢╢╫╗й╠╪Дё╨2016дЙ3тб25ху ионГ11:42:14<br>
- * вН╨Спч╦дй╠╪Дё╨<br>
+ * Е┬⌡Е╩╨Ф≈╤И≈╢О╪ 2016Е╧╢3Ф°┬25Ф≈╔ Д╦┼Е█┬11:42:14<br>
+ * Ф°─Е░▌Д©╝Ф■╧Ф≈╤И≈╢О╪ <br>
  * 		TODO		
  *  <br>
- *  й╣ожиообнд╫с©з
+ *  Е╝·Г▌╟Д╦┼Д╦▀Ф√┤Ф▌╔Е▐ё
  */
+
 
 @SuppressWarnings({"rawtypes","unchecked"})
 public class ContextStore implements IContext {

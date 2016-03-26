@@ -3,14 +3,14 @@ package com.fih.framework.core.envelope;
 import com.fih.framework.core.context.IContext;
 
 /**
- * @author ÉÛ¸£°²
+ * @author é‚µç¦å®‰
  * @version v0.1
  *<br>
- * ´´½¨Ê±¼ä£º2016Äê3ÔÂ25ÈÕ ÉÏÎç11:57:29<br>
- * ×îºóĞŞ¸ÄÊ±¼ä£º<br>
+ * åˆ›å»ºæ—¶é—´ï¼š2016å¹´3æœˆ25æ—¥ ä¸Šåˆ11:57:29<br>
+ * æœ€åä¿®æ”¹æ—¶é—´ï¼š<br>
  * 		TODO		
  *  <br>
- *  ĞÅ·âÌå½Ó¿Ú
+ *  ä¿¡å°ä½“æ¥å£
  */
 public interface IEnvelopeBody extends IContext,IEnvelopeElementDefinitions {
 	

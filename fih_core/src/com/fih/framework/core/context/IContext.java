@@ -1,29 +1,29 @@
 package com.fih.framework.core.context;
 
 /**
- * @author ÉÛ¸£°²
+ * @author é‚µç¦å®‰
  * @version v0.1 2016-03-25<br>
  *	<br>
- *	ÉÏÏÂÎÄ½Ó¿Ú
+ *	ä¸Šä¸‹æ–‡æ¥å£
  *
  */
 public interface IContext {
 	
 	/**
-	 * »ñÈ¡·½·¨.
+	 * è·å–æ–¹æ³•.
 	 * 
-	 * @param key	ÉÏÏÂÎÄ¹Ø¼ü×Ö
-	 * @return	¹Ø¼ü×ÖÖµ
+	 * @param key	ä¸Šä¸‹æ–‡å…³é”®å­—
+	 * @return	å…³é”®å­—å€¼
 	 * 
 	 */
 	Object get(Object key);
 	
 	/**
-	 * ¸³Öµ·½·¨.
+	 * èµ‹å€¼æ–¹æ³•.
 	 * 
-	 * @param key	ÉÏÏÂÎÄ¹Ø¼ü×Ö
-	 * @param value	¹Ø¼ü×ÖÖµ
-	 * @return	ÎŞ·µ»Ø
+	 * @param key	ä¸Šä¸‹æ–‡å…³é”®å­—
+	 * @param value	å…³é”®å­—å€¼
+	 * @return	æ— è¿”å›
 	 */
 	Object set(Object key,Object value);
 

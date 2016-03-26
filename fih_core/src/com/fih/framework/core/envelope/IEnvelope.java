@@ -3,26 +3,26 @@ package com.fih.framework.core.envelope;
 import com.fih.framework.core.context.IContextContainer;
 
 /**
- * @author ÉÛ¸£°²
+ * @author é‚µç¦å®‰
  * @version v0.1<br>
  *<br>
- * ´´½¨Ê±¼ä£º2016Äê3ÔÂ25ÈÕ ÉÏÎç11:54:13<br>
- * ×îºóĞŞ¸ÄÊ±¼ä£º<br>
+ * åˆ›å»ºæ—¶é—´ï¼š2016å¹´3æœˆ25æ—¥ ä¸Šåˆ11:54:13<br>
+ * æœ€åä¿®æ”¹æ—¶é—´ï¼š<br>
  * 		TODO		
  *  <br>
- *  ĞÅ·â½Ó¿Ú
+ *  ä¿¡å°æ¥å£
  */
 public interface IEnvelope extends IContextContainer {
 	
 	/**
-	 * ·µ»ØĞÅ·âÍ··½·¨
-	 * @return  ĞÅ·âÍ·½Ó¿Ú
+	 * è¿”å›ä¿¡å°å¤´æ–¹æ³•
+	 * @return  ä¿¡å°å¤´æ¥å£
 	 */
 	IEnvelopeHeader getHeader();
 	
 	/**
-	 * ·µ»ØĞÅ·âÌå·½·¨
-	 * @return  ĞÅ·âÌå½Ó¿Ú
+	 * è¿”å›ä¿¡å°ä½“æ–¹æ³•
+	 * @return  ä¿¡å°ä½“æ¥å£
 	 */
 	IEnvelopeBody getBody();
 			

@@ -1,31 +1,31 @@
 package com.fih.framework.core.envelope;
 
 /**
- * @author ÉÛ¸£°²
+ * @author é‚µç¦å®‰
  * @version v0.1<br>
  *<br>
- * ´´½¨Ê±¼ä£º2016Äê3ÔÂ25ÈÕ ÉÏÎç11:58:13<br>
- * ×îºóĞŞ¸ÄÊ±¼ä£º<br>
+ * åˆ›å»ºæ—¶é—´ï¼š2016å¹´3æœˆ25æ—¥ ä¸Šåˆ11:58:13<br>
+ * æœ€åä¿®æ”¹æ—¶é—´ï¼š<br>
  * 		TODO		
  *  <br>
- *  ĞÅ·âÔªËØÃèÊö½Ó¿Ú
+ *  ä¿¡å°å…ƒç´ æè¿°æ¥å£
  *  
  */
 public interface IEnvelopeElementDescription {
 	
 	/**
-	 * ÔªËØÃû
-	 * @return ÔªËØÃû
+	 * å…ƒç´ å
+	 * @return å…ƒç´ å
 	 */
 	String getName();
 	/**
-	 * ÔªËØÀàĞÍ
+	 * å…ƒç´ ç±»å‹
 	 * @return	Class
 	 */
 	Class<?> getType();
 	/**
-	 * ÔªËØËµÃ÷
-	 * @return ÔªËØËµÃ÷
+	 * å…ƒç´ è¯´æ˜
+	 * @return å…ƒç´ è¯´æ˜
 	 */
 	String getDescription();
 

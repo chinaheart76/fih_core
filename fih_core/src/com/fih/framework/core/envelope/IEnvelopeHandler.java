@@ -1,14 +1,14 @@
 package com.fih.framework.core.envelope;
 
 /**
- * @author ÉÛ¸£°²
+ * @author é‚µç¦å®‰
  * @version v0.1
  *
- * ´´½¨Ê±¼ä£º2016Äê3ÔÂ25ÈÕ ÏÂÎç12:19:40  <br>
- * ×îºóĞŞ¸ÄÊ±¼ä£º<br>
+ * åˆ›å»ºæ—¶é—´ï¼š2016å¹´3æœˆ25æ—¥ ä¸‹åˆ12:19:40  <br>
+ * æœ€åä¿®æ”¹æ—¶é—´ï¼š<br>
  * 		TODO		
  * <br><br> 
- * ĞÅ·â´¦Àí½Ó¿Ú
+ * ä¿¡å°å¤„ç†æ¥å£
  */
 public interface IEnvelopeHandler {
 	

@@ -1,17 +1,17 @@
 package com.fih.framework.core.context;
 
 /**
- * @author иш╦ё╟╡
+ * @author И┌╣Г╕▐Е╝┴
  * @version v0.1 2016-03-25<br>
  * <br>
- * иообндхщфВ╫с©з
+ * Д╦┼Д╦▀Ф√┤Е╝╧Е≥╗Ф▌╔Е▐ё
  *
  */
 public interface IContextContainer {
 
 	/**
-	 * ╩Я╣циообнд╥╫╥╗
-	 * @return  ╥╣╩ьиообнд╫с©з
+	 * Х▌╥Е╬≈Д╦┼Д╦▀Ф√┤Ф√╧ФЁ∙
+	 * @return  Х©■Е⌡·Д╦┼Д╦▀Ф√┤Ф▌╔Е▐ё
 	 * 
 	 */
 	IContext getContext();
