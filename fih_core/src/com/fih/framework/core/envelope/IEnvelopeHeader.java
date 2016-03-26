@@ -13,7 +13,7 @@ import com.fih.framework.core.context.IContext;
  *  信封头接口
  *  
  */
-public interface IEnvelopeHeader extends IContext,IEnvelopeElementDefinitions {
+public interface IEnvelopeHeader extends IEnvelopeElementDefinitions {
 	
 	String getProtocol();
 	String getVersion();

@@ -17,10 +17,9 @@ import com.fih.framework.core.context.IContext;
  */
 
 
-@SuppressWarnings({"rawtypes","unchecked"})
 public class ContextStore implements IContext {
 	
-	private Map store = new HashMap();
+	private Map<Object, Object> store = new HashMap<Object, Object>();
 
 	@Override
 	public Object get(Object key) {

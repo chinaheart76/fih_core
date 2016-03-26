@@ -7,14 +7,14 @@ import java.util.Map;
 import java.util.Set;
 
 /**
- * @author ÉÛ¸£°²
+ * @author é‚µç¦å®‰
  * @version v0.1
  *
- * ´´½¨Ê±¼ä£º2016Äê3ÔÂ25ÈÕ ÏÂÎç12:36:37  <br>
- * ×îºóĞŞ¸ÄÊ±¼ä£º<br>
+ * åˆ›å»ºæ—¶é—´ï¼š2016å¹´3æœˆ27æ—¥ ä¸Šåˆ3:25:09  <br>
+ * æœ€åä¿®æ”¹æ—¶é—´ï¼š<br>
  * 		TODO		
  * <br><br> 
- * ĞÅ·â´æ´¢ÊµÏÖ
+ * ä¿¡å°å­˜å‚¨å®ç°
  */
 public class EnvelopeStore implements Map<String, Object> {
 	

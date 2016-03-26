@@ -13,12 +13,14 @@ public class WebEnvelopeBody extends EnvelopeStore implements IEnvelopeBody {
 		return super.put((String)key, value);
 	}
 	
-	public Object set(String key, Object value) {
-		return super.put(key, value);
+	@Override
+	public Collection<IEnvelopeElementDescription> getDefinitions() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 	@Override
-	public Collection<IEnvelopeElementDescription> getDefinitions() {
+	public String getStatus() {
 		// TODO Auto-generated method stub
 		return null;
 	}
