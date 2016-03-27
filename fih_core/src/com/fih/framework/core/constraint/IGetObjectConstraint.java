@@ -12,10 +12,10 @@ import java.util.Collection;
  * <br><br> 
  * 对象拥有的约束接口
  */
-public interface IGetConstraint {
+public interface IGetObjectConstraint {
 	
 	/**
-	 * 获得约束接口集合
+	 * 获得对象或者服务的约束接口集合
 	 * @return	约束接口集合
 	 */
 	Collection<IConstraint> getConstraints();

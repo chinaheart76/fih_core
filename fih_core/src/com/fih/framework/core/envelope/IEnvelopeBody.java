@@ -13,9 +13,17 @@ import com.fih.framework.core.context.IContextContainer;
  *  <br>
  *  信封体接口
  */
-public interface IEnvelopeBody extends IContext,IContextContainer,IEnvelopeElementDefinitions {
+public interface IEnvelopeBody extends IContextContainer,IEnvelopeElementDefinitions {
 	
 	String getStatus();		
 	String getMessage();
+	
+	/**
+	 * 返回信封头方法
+	 * @return  信封头接口
+	 */
+	IEnvelopeHeader getHeader();
+	
+	IEnvelope getEnvelope();
 	
 }

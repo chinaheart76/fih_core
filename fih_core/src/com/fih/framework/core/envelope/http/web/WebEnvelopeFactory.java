@@ -6,6 +6,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.fih.framework.core.envelope.IEnvelope;
 import com.fih.framework.core.envelope.IEnvelopeFactory;
+import com.fih.framework.core.envelope.excpt.EnvelopeRuntimeException;
 
 public class WebEnvelopeFactory implements IEnvelopeFactory {
 	
@@ -19,9 +20,14 @@ public class WebEnvelopeFactory implements IEnvelopeFactory {
 		this.request = request;
 		this.response = response;
 	}
+	
+	@SuppressWarnings("unused")
+	private WebEnvelopeFactory(){
+		super();
+	}
 
 	@Override
-	public IEnvelope createEnvelope() {
+	public IEnvelope createEnvelope() throws EnvelopeRuntimeException {
 		return null;
 	}
 

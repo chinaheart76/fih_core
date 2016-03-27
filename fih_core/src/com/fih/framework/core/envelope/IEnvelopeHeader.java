@@ -15,6 +15,7 @@ import com.fih.framework.core.context.IContextContainer;
  */
 public interface IEnvelopeHeader extends IContextContainer,IEnvelopeElementDefinitions {
 	
+	String getEnvelopeVersion();
 	Protocol getProtocol();
 	String getVersion();
 	String getClientId();
@@ -30,4 +31,12 @@ public interface IEnvelopeHeader extends IContextContainer,IEnvelopeElementDefin
 	String getServiceNamespace();
 	String getServiceMethod();
 	
+	/**
+	 * 返回信封体方法
+	 * @return  信封体接口
+	 */
+	IEnvelopeBody getBody();
+
+	IEnvelope getEnvelope();
+
 }

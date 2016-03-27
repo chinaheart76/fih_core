@@ -1,5 +1,7 @@
 package com.fih.framework.core.envelope;
 
+import com.fih.framework.core.envelope.excpt.EnvelopeRuntimeException;
+
 /**
  * @author 邵福安
  * @version v0.1
@@ -16,13 +18,13 @@ public interface IEnvelopeHandlerPreposePost {
 	 * 前置接口
 	 * @param requestEnvelope	请求信封
 	 */
-	void Propose(IEnvelope requestEnvelope);
+	void Propose(IEnvelope requestEnvelope) throws EnvelopeRuntimeException;
 	
 	/**
 	 * 后置接口
 	 * @param requestEnvelope	请求信封
 	 * @param responseEnvelope	响应信封
 	 */
-	void Post(IEnvelope requestEnvelope,IEnvelope responseEnvelope);
+	void Post(IEnvelope requestEnvelope,IEnvelope responseEnvelope) throws EnvelopeRuntimeException;
 
 }

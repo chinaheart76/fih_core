@@ -3,17 +3,26 @@ package com.fih.framework.core.envelope.http.web;
 import java.util.Collection;
 import java.util.Collections;
 
+import com.fih.framework.core.envelope.IEnvelope;
 import com.fih.framework.core.envelope.IEnvelopeBody;
 import com.fih.framework.core.envelope.IEnvelopeElementDescription;
+import com.fih.framework.core.envelope.IEnvelopeHeader;
 import com.fih.framework.core.envelope.impl.EnvelopeStore;
 
 public class WebEnvelopeBody extends EnvelopeStore implements IEnvelopeBody {
 
-	@Override
-	public Object set(Object key, Object value) {
-		return super.put((String)key, value);
+	IEnvelope envelope = null;
+
+	public WebEnvelopeBody(IEnvelope envelope) {
+		super();
+		this.envelope = envelope;
 	}
 	
+	@SuppressWarnings("unused")
+	private WebEnvelopeBody(){
+		super();
+	}
+
 	@SuppressWarnings("unchecked")
 	@Override
 	public Collection<IEnvelopeElementDescription> getDefinitions() {
@@ -43,6 +52,16 @@ public class WebEnvelopeBody extends EnvelopeStore implements IEnvelopeBody {
 	public String getMessage() {
 		// TODO Auto-generated method stub
 		return null;
+	}
+
+	@Override
+	public IEnvelopeHeader getHeader() {
+		return envelope.getHeader();
+	}
+
+	@Override
+	public IEnvelope getEnvelope() {
+		return envelope;
 	}
 
 }

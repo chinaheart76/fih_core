@@ -3,8 +3,9 @@ package com.fih.framework.core.envelope.http.web;
 import java.util.Collection;
 import java.util.Collections;
 
-import com.fih.framework.core.context.IContext;
 import com.fih.framework.core.envelope.ClientType;
+import com.fih.framework.core.envelope.IEnvelope;
+import com.fih.framework.core.envelope.IEnvelopeBody;
 import com.fih.framework.core.envelope.IEnvelopeElementDescription;
 import com.fih.framework.core.envelope.IEnvelopeHeader;
 import com.fih.framework.core.envelope.Method;
@@ -22,6 +23,18 @@ import com.fih.framework.core.envelope.impl.EnvelopeStore;
  * http协议web头实现
  */
 public class WebEnvelopeHeader extends EnvelopeStore implements IEnvelopeHeader {
+	
+	IEnvelope envelope = null;
+
+	public WebEnvelopeHeader(IEnvelope envelope) {
+		super();
+		this.envelope = envelope;
+	}
+	
+	@SuppressWarnings("unused")
+	private WebEnvelopeHeader() {
+		super();
+	}
 
 	@SuppressWarnings("unchecked")
 	@Override
@@ -160,6 +173,21 @@ public class WebEnvelopeHeader extends EnvelopeStore implements IEnvelopeHeader 
 	
 	public String setServiceMethod(String serviceMethod){
 		return (String)super.put("serviceMethod", serviceMethod);
+	}
+
+	@Override
+	public IEnvelopeBody getBody() {
+		return envelope.getBody();
+	}
+
+	@Override
+	public IEnvelope getEnvelope() {
+		return envelope;
+	}
+
+	@Override
+	public String getEnvelopeVersion() {
+		return "0.1";
 	}
 
 }

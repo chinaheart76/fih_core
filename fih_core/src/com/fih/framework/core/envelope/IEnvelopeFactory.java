@@ -1,5 +1,7 @@
 package com.fih.framework.core.envelope;
 
+import com.fih.framework.core.envelope.excpt.EnvelopeRuntimeException;
+
 /**
  * @author 邵福安
  * @version v0.1
@@ -13,6 +15,6 @@ package com.fih.framework.core.envelope;
  */
 public interface IEnvelopeFactory {
 	
-	IEnvelope createEnvelope();
+	IEnvelope createEnvelope() throws EnvelopeRuntimeException;
 
 }
