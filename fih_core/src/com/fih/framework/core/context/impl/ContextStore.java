@@ -19,7 +19,7 @@ import com.fih.framework.core.context.IContext;
 
 public class ContextStore implements IContext {
 	
-	private Map<Object, Object> store = new HashMap<Object, Object>();
+	private Map<Object, Object> store = null;
 
 	@Override
 	public Object get(Object key) {
@@ -30,5 +30,15 @@ public class ContextStore implements IContext {
 	public Object set(Object key, Object value) {
 		return store.put(key, value);
 	}
+
+	@SuppressWarnings("unused")
+	private ContextStore() {
+		super();
+	}
+
+	public ContextStore(Map<Object, Object> store) {
+		super();
+		this.store = store;
+	}	
 
 }

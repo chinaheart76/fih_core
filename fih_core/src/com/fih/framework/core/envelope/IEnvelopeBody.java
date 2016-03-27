@@ -1,6 +1,7 @@
 package com.fih.framework.core.envelope;
 
 import com.fih.framework.core.context.IContext;
+import com.fih.framework.core.context.IContextContainer;
 
 /**
  * @author 邵福安
@@ -12,8 +13,9 @@ import com.fih.framework.core.context.IContext;
  *  <br>
  *  信封体接口
  */
-public interface IEnvelopeBody extends IContext,IEnvelopeElementDefinitions {
+public interface IEnvelopeBody extends IContext,IContextContainer,IEnvelopeElementDefinitions {
 	
-	String getStatus();	
+	String getStatus();		
+	String getMessage();
 	
 }

@@ -1,6 +1,6 @@
 package com.fih.framework.core.envelope;
 
-import com.fih.framework.core.context.IContext;
+import com.fih.framework.core.context.IContextContainer;
 
 /**
  * @author 邵福安
@@ -13,15 +13,15 @@ import com.fih.framework.core.context.IContext;
  *  信封头接口
  *  
  */
-public interface IEnvelopeHeader extends IEnvelopeElementDefinitions {
+public interface IEnvelopeHeader extends IContextContainer,IEnvelopeElementDefinitions {
 	
-	String getProtocol();
+	Protocol getProtocol();
 	String getVersion();
 	String getClientId();
 	String getClientName();
-	String getClientType();
+	ClientType getClientType();
 	String getUrl();
-	String getMethod();
+	Method getMethod();
 	String getStartTimeStamp();
 	String getEndTimeStamp();
 	String getEnvelopeId();

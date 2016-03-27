@@ -1,5 +1,7 @@
 package com.fih.framework.core.constraint;
 
+import com.fih.framework.core.constraint.excpt.ConstraintRuntimeException;
+
 /**
  * @author 邵福安
  * @version v0.1
@@ -16,5 +18,5 @@ public interface IConstraintHandler {
 	 * 约束处理器
 	 * @param constraintOfObject	约束处理对象
 	 */
-	void handler(Object constraintOfObject);
+	void handler(Object constraintOfObject) throws ConstraintRuntimeException;
 }
