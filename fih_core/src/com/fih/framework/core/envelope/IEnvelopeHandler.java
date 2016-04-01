@@ -14,6 +14,12 @@ import com.fih.framework.core.envelope.excpt.EnvelopeRuntimeException;
  */
 public interface IEnvelopeHandler {
 	
+	/**
+	 * 处理信封方法
+	 * @param envelope
+	 * @return
+	 * @throws EnvelopeRuntimeException
+	 */
 	IEnvelope handler(IEnvelope envelope) throws EnvelopeRuntimeException;
 
 }

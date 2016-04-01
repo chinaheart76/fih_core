@@ -19,13 +19,16 @@ import com.fih.framework.core.context.IContext;
 
 public class ContextStore implements IContext {
 	
+	private static final long serialVersionUID = 2158609385120446855L;
 	private Map<Object, Object> store = null;
 
+	@SuppressWarnings("unchecked")
 	@Override
 	public Object get(Object key) {
 		return store.get(key);
 	}
 
+	@SuppressWarnings("unchecked")
 	@Override
 	public Object set(Object key, Object value) {
 		return store.put(key, value);

@@ -37,6 +37,10 @@ public interface IEnvelopeHeader extends IContextContainer,IEnvelopeElementDefin
 	 */
 	IEnvelopeBody getBody();
 
+	/**
+	 * 返回信封
+	 * @return
+	 */
 	IEnvelope getEnvelope();
 
 }

@@ -1,5 +1,7 @@
 package com.fih.framework.core.context;
 
+import java.io.Serializable;
+
 /**
  * @author 邵福安
  * @version v0.1 2016-03-25<br>
@@ -7,7 +9,7 @@ package com.fih.framework.core.context;
  *	上下文接口
  *
  */
-public interface IContext {
+public interface IContext extends Serializable {
 	
 	/**
 	 * 获取方法.
@@ -16,7 +18,7 @@ public interface IContext {
 	 * @return	关键字值
 	 * 
 	 */
-	Object get(Object key);
+	<K,V> V get(K key);
 	
 	/**
 	 * 赋值方法.
@@ -25,6 +27,6 @@ public interface IContext {
 	 * @param value	关键字值
 	 * @return	无返回
 	 */
-	Object set(Object key,Object value);
+	<K,V> V set(K key,V value);
 
 }

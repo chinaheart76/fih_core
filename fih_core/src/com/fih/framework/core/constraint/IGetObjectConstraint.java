@@ -19,5 +19,10 @@ public interface IGetObjectConstraint {
 	 * @return	约束接口集合
 	 */
 	Collection<IConstraint> getConstraints();
+	
+	IConstraint getConstraint(String name);
+	void addConstraint(IConstraint constraint);
+	IConstraint removeConstraint(String name);
+	IConstraint removeConstraint(IConstraint constraint);
 
 }

@@ -18,5 +18,5 @@ public interface IConstraintHandler {
 	 * 约束处理器
 	 * @param constraintOfObject	约束处理对象
 	 */
-	void handler(Object constraintOfObject) throws ConstraintRuntimeException;
+	<T> void handler(T constraintOfObject) throws ConstraintRuntimeException;
 }

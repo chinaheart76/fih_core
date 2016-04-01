@@ -15,8 +15,11 @@ import com.fih.framework.core.context.IContextContainer;
  */
 public interface IEnvelopeBody extends IContextContainer,IEnvelopeElementDefinitions {
 	
-	String getStatus();		
-	String getMessage();
+	/**
+	 * 获得信封体内的结果集
+	 * @return
+	 */
+	IEnvelopeBodyResultSet getResultSet();
 	
 	/**
 	 * 返回信封头方法
@@ -24,6 +27,10 @@ public interface IEnvelopeBody extends IContextContainer,IEnvelopeElementDefinit
 	 */
 	IEnvelopeHeader getHeader();
 	
+	/**
+	 * 返回信封
+	 * @return
+	 */
 	IEnvelope getEnvelope();
 	
 }

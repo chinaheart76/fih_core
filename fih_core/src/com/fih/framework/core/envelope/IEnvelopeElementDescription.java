@@ -1,5 +1,7 @@
 package com.fih.framework.core.envelope;
 
+import java.io.Serializable;
+
 /**
  * @author 邵福安
  * @version v0.1<br>
@@ -11,7 +13,7 @@ package com.fih.framework.core.envelope;
  *  信封元素描述接口
  *  
  */
-public interface IEnvelopeElementDescription {
+public interface IEnvelopeElementDescription extends Serializable {
 	
 	/**
 	 * 元素名

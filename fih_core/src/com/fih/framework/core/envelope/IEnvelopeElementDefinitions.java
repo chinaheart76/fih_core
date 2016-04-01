@@ -15,6 +15,27 @@ import java.util.Collection;
  */
 public interface IEnvelopeElementDefinitions {
 	
+		/**
+		 * 获得全部元素描述
+		 * @return
+		 */
 		Collection<IEnvelopeElementDescription> getDefinitions();
+		/**
+		 * 获得指定元素描述
+		 * @param name
+		 * @return
+		 */
+		IEnvelopeElementDescription getDefinition(String name);
+		
+		/**
+		 * 增加元素描述
+		 * @param definition
+		 */
+		void addDefinition(IEnvelopeElementDescription definition);
+		void addDefinition(String name,IEnvelopeElementDescription definition);
+		
+		IEnvelopeElementDescription remove(String name);
+		IEnvelopeElementDescription remove(IEnvelopeElementDescription definition);
+		
 		
 }

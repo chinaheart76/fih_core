@@ -1,5 +1,6 @@
 package com.fih.framework.core.constraint;
 
+import java.io.Serializable;
 import java.util.Collection;
 
 /**
@@ -12,7 +13,7 @@ import java.util.Collection;
  * <br><br> 
  * 约束接口
  */
-public interface IConstraint {
+public interface IConstraint extends Serializable {
 	
 	/**
 	 * 约束名称

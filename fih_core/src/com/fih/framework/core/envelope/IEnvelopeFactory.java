@@ -15,6 +15,11 @@ import com.fih.framework.core.envelope.excpt.EnvelopeRuntimeException;
  */
 public interface IEnvelopeFactory {
 	
+	/**
+	 * 创建信封工厂方法
+	 * @return
+	 * @throws EnvelopeRuntimeException
+	 */
 	IEnvelope createEnvelope() throws EnvelopeRuntimeException;
 
 }
