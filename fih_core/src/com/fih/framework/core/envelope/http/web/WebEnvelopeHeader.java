@@ -190,4 +190,28 @@ public class WebEnvelopeHeader extends EnvelopeStore implements IEnvelopeHeader 
 		return "0.1";
 	}
 
+	@Override
+	public IEnvelopeElementDescription getDefinition(String name) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void addDefinition(String name, IEnvelopeElementDescription definition) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public IEnvelopeElementDescription remove(String name) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public IEnvelopeElementDescription remove(IEnvelopeElementDescription definition) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }
