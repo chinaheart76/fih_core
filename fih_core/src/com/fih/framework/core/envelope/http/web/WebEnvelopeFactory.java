@@ -4,6 +4,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.fih.framework.core.context.IContext;
 import com.fih.framework.core.envelope.IEnvelope;
 import com.fih.framework.core.envelope.IEnvelopeFactory;
 import com.fih.framework.core.envelope.excpt.EnvelopeRuntimeException;
@@ -28,6 +29,18 @@ public class WebEnvelopeFactory implements IEnvelopeFactory {
 
 	@Override
 	public IEnvelope createEnvelope() throws EnvelopeRuntimeException {
+		return new WebEnvelope(createContext(),createEnvelopeHeader(),createEnvelopeBody());
+	}
+	
+	IContext createContext(){
+		return null;
+	}
+	
+	WebEnvelopeHeader createEnvelopeHeader(){
+		return null;
+	}
+	
+	WebEnvelopeBody createEnvelopeBody(){
 		return null;
 	}
 

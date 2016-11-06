@@ -10,7 +10,6 @@ import com.fih.framework.core.envelope.IEnvelopeElementDescription;
 import com.fih.framework.core.envelope.IEnvelopeHeader;
 import com.fih.framework.core.envelope.Method;
 import com.fih.framework.core.envelope.Protocol;
-import com.fih.framework.core.envelope.impl.EnvelopeStore;
 
 /**
  * @author 邵福安
@@ -26,7 +25,7 @@ public class WebEnvelopeHeader extends EnvelopeStore implements IEnvelopeHeader 
 	
 	IEnvelope envelope = null;
 
-	public WebEnvelopeHeader(IEnvelope envelope) {
+	WebEnvelopeHeader(IEnvelope envelope) {
 		super();
 		this.envelope = envelope;
 	}

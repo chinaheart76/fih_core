@@ -17,7 +17,7 @@ import com.fih.framework.core.context.IContext;
  */
 
 
-public class ContextStore implements IContext {
+class ContextStore implements IContext {
 	
 	private static final long serialVersionUID = 2158609385120446855L;
 	private Map<Object, Object> store = null;
@@ -39,7 +39,7 @@ public class ContextStore implements IContext {
 		super();
 	}
 
-	public ContextStore(Map<Object, Object> store) {
+	ContextStore(Map<Object, Object> store) {
 		super();
 		this.store = store;
 	}	

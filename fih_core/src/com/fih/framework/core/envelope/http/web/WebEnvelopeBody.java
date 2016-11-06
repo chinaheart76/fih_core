@@ -8,13 +8,12 @@ import com.fih.framework.core.envelope.IEnvelopeBody;
 import com.fih.framework.core.envelope.IEnvelopeBodyResultSet;
 import com.fih.framework.core.envelope.IEnvelopeElementDescription;
 import com.fih.framework.core.envelope.IEnvelopeHeader;
-import com.fih.framework.core.envelope.impl.EnvelopeStore;
 
 public class WebEnvelopeBody extends EnvelopeStore implements IEnvelopeBody {
 
 	IEnvelope envelope = null;
 
-	public WebEnvelopeBody(IEnvelope envelope) {
+	WebEnvelopeBody(IEnvelope envelope) {
 		super();
 		this.envelope = envelope;
 	}

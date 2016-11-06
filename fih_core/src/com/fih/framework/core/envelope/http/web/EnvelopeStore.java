@@ -1,4 +1,4 @@
-package com.fih.framework.core.envelope.impl;
+package com.fih.framework.core.envelope.http.web;
 
 import java.util.Collection;
 import java.util.Collections;
@@ -8,7 +8,7 @@ import java.util.Set;
 
 import com.fih.framework.core.context.IContext;
 import com.fih.framework.core.context.IContextContainer;
-import com.fih.framework.core.context.impl.ContextStore;
+import com.fih.framework.core.context.impl.ContextFactoryWithMap;
 
 /**
  * @author 邵福安
@@ -20,7 +20,7 @@ import com.fih.framework.core.context.impl.ContextStore;
  * <br><br> 
  * 信封存储实现
  */
-public class EnvelopeStore implements Map<String, Object>,IContextContainer {
+class EnvelopeStore implements Map<String, Object>,IContextContainer {
 	
 	private Map<String,Object> store = new HashMap<String,Object>();
 
@@ -112,7 +112,7 @@ public class EnvelopeStore implements Map<String, Object>,IContextContainer {
 		
 		context.putAll(this.store);
 		
-		return new ContextStore(context);
+		return new ContextFactoryWithMap().createContext(context);
 	}
 
 }
